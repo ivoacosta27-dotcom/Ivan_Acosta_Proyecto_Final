@@ -1,0 +1,102 @@
+:root {
+  --ciruela: #4a2340;
+  --ciruela-claro: #6b3a5e;
+  --rosa: #e9d5dc;
+  --dorado: #a8814f;
+  --fondo: #fbf9fa;
+  --texto: #2a2230;
+  --borde: #ddd2d8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--texto);
+  background: var(--fondo);
+}
+
+header {
+  background: var(--ciruela);
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: Georgia, serif;
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+nav {
+  background: #fff;
+  border-bottom: 1px solid var(--borde);
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: var(--ciruela);
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+main {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  color: var(--ciruela);
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid var(--borde);
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background: var(--ciruela);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background: var(--ciruela-claro);
+}
+
+.error {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.exito {
+  background: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}

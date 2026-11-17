@@ -61,8 +61,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <a href="registro.php">Registrarse</a>
 </nav>
 
-<main>
-    <h2>Iniciar Sesión</h2>
+    <main>
+        <h2>Iniciar Sesión</h2>
 
     <?php if ($error !== ''): ?>
         <div class="error"><?= htmlspecialchars($error, ENT_QUOTES, 'UTF-8') ?></div>
